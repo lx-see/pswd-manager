@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="20sp"
+                  android:layout_marginBottom="20sp"
+                  android:gravity="center"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/dialog_website_name">
+
+<!--            <TextView android:layout_height="wrap_content"-->
+<!--                      android:layout_width="wrap_content"-->
+<!--                      android:textColor="#000"-->
+<!--                      android:id="@+id/tvWebsiteName"-->
+<!--                      android:text="Website Name: \t" />-->
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/etWebsiteName"
+                      android:ellipsize="start"
+                      android:gravity="center_horizontal"
+                      android:textColor="#000"
+                      android:textColorHint="#A1A1A1"
+                      android:hint="Website Name"
+                      android:minWidth="200dip"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dialog_username"
+                android:layout_gravity="center"
+                android:layout_below="@+id/dialog_password"
+        >
+<!--            <TextView android:layout_height="wrap_content"-->
+<!--                      android:layout_width="wrap_content"-->
+<!--                      android:textColor="#000"-->
+<!--                      android:id="@+id/tvUsername"-->
+<!--                      android:text="Username: \t\t\t\t\t" />-->
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/etUsername"
+                      android:ellipsize="start"
+                      android:gravity="center_horizontal"
+                      android:textColor="#000"
+                      android:textColorHint="#A1A1A1"
+                      android:hint="Username"
+                      android:minWidth="200dip"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dialog_password"
+                android:layout_gravity="center"
+                android:layout_below="@+id/dialog_password"
+        >
+<!--            <TextView android:layout_height="wrap_content"-->
+<!--                      android:layout_width="wrap_content"-->
+<!--                      android:textColor="#000"-->
+<!--                      android:id="@+id/tvPassWord"-->
+<!--                      android:text="Password: \t\t\t\t\t" />-->
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/etPassword"
+                      android:ellipsize="start"
+                      android:gravity="center_horizontal"
+                      android:textColor="#000"
+                      android:textColorHint="#A1A1A1"
+                      android:hint="Password"
+                      android:minWidth="200dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginTop="20sp"
+                  android:layout_marginBottom="20sp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:layout_gravity="center">
+            <ImageView android:layout_width="120sp" android:layout_height="120sp"
+                       android:src="@mipmap/logo2"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent"
+                       android:layout_gravity="center"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/pin_number">
+
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="#000"
+                      android:layout_gravity="center"
+                      android:id="@+id/tvPinNumber"
+                      android:text="Enter Your PIN Number" />
+
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/etPinNumber"
+                      android:ellipsize="start"
+                      android:gravity="center_horizontal"
+                      android:textColorHint="#A1A1A1"
+                      android:textColor="#000"
+                      android:layout_gravity="center"
+                      android:hint="PIN"
+                      android:inputType="number"
+                      android:maxLength="6"
+                      android:minWidth="200dip"/>
+            <Button android:layout_width="wrap_content" android:layout_height="35sp"
+                    android:text="Confirm"
+                    android:layout_marginTop="10sp"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_background"
+                    android:id="@+id/pin_btn"
+                    android:layout_gravity="center"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="35sp"
+                    android:text="Forgot PIN? Reset PIN Number"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:background="#00ffffff"
+                    android:textColor="#06BEE1"
+                    android:textSize="10sp"
+                    android:id="@+id/reset_password_btn"
+                    android:layout_gravity="center"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/item_background"
+              android:layout_marginBottom="15sp"
+              android:layout_marginLeft="10sp"
+              android:layout_marginRight="10sp"
+              android:orientation="horizontal">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_website_icon" />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/website_name"
+                  android:text="Website Name"
+                  android:maxWidth="150sp"
+                  android:textColor="#000"
+                  android:textSize="13sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/username"
+                  android:layout_marginTop="5sp"
+                  android:text="Username"
+                  android:maxWidth="150sp"
+                  android:textColor="#03256C"
+                  android:textSize="13sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/password"
+                  android:layout_marginTop="5sp"
+                  android:text="Password"
+                  android:maxWidth="150sp"
+                  android:textColor="#03256C"
+                  android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="right">
+
+        <Button android:layout_width="25sp" android:layout_height="25sp"
+                android:id="@+id/edit_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/ic_edit"/>
+
+        <Button android:layout_width="25sp" android:layout_height="25sp"
+                android:id="@+id/delete_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/ic_bin"/>
+
+        <Button android:layout_width="25sp" android:layout_height="25sp"
+                android:id="@+id/eye_btn"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_eye_slash"/>
+
+    </LinearLayout>
+
+</LinearLayout>
