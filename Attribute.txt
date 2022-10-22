@@ -1,0 +1,9 @@
+List of icons downloaded from Flaticon website
+
+<a href="https://www.flaticon.com/free-icons/house" title="house icons">House icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/folder" title="folder icons">Folder icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by srip - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/marketing" title="marketing icons">Marketing icons created by Freepik - Flaticon</a>

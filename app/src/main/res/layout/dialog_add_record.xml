@@ -9,10 +9,20 @@
                   android:layout_marginTop="20sp"
                   android:layout_marginBottom="20sp"
                   android:gravity="center"
+                  android:background="@drawable/item_pswd_background"
                   app:layout_constraintBottom_toBottomOf="parent"
                   app:layout_constraintLeft_toLeftOf="parent"
                   app:layout_constraintRight_toRightOf="parent"
                   app:layout_constraintTop_toTopOf="parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Add Password Record"
+                  android:textColor="#718369"
+                  android:textAlignment="center"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="20sp"
+                  android:layout_marginBottom="20sp"
+                  android:textStyle="bold"
+                  android:textSize="14sp" />
         <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -32,7 +42,13 @@
                       android:gravity="center_horizontal"
                       android:textColor="#000"
                       android:textColorHint="#A1A1A1"
-                      android:hint="Website Name"
+                      android:hint="Website / Software"
+                      android:background="@drawable/add_record_background"
+                      android:paddingTop="8sp"
+                      android:paddingBottom="8sp"
+                      android:paddingLeft="15sp"
+                      android:paddingRight="15sp"
+                      android:layout_marginBottom="15sp"
                       android:minWidth="200dip"/>
         </LinearLayout>
         <LinearLayout
@@ -55,7 +71,13 @@
                       android:gravity="center_horizontal"
                       android:textColor="#000"
                       android:textColorHint="#A1A1A1"
-                      android:hint="Username"
+                      android:hint="Username / Account"
+                      android:background="@drawable/add_record_background"
+                      android:paddingTop="8sp"
+                      android:paddingBottom="8sp"
+                      android:paddingLeft="15sp"
+                      android:paddingRight="15sp"
+                      android:layout_marginBottom="15sp"
                       android:minWidth="200dip"/>
         </LinearLayout>
         <LinearLayout
@@ -79,6 +101,41 @@
                       android:textColor="#000"
                       android:textColorHint="#A1A1A1"
                       android:hint="Password"
+                      android:background="@drawable/add_record_background"
+                      android:paddingTop="8sp"
+                      android:paddingBottom="8sp"
+                      android:paddingLeft="15sp"
+                      android:paddingRight="15sp"
+                      android:layout_marginBottom="15sp"
+                      android:minWidth="200dip"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dialog_link"
+                android:layout_gravity="center"
+                android:layout_below="@+id/dialog_password"
+        >
+            <!--            <TextView android:layout_height="wrap_content"-->
+            <!--                      android:layout_width="wrap_content"-->
+            <!--                      android:textColor="#000"-->
+            <!--                      android:id="@+id/tvPassWord"-->
+            <!--                      android:text="Password: \t\t\t\t\t" />-->
+            <EditText android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:id="@+id/etLink"
+                      android:ellipsize="start"
+                      android:gravity="center_horizontal"
+                      android:textColor="#000"
+                      android:textColorHint="#A1A1A1"
+                      android:hint="Link"
+                      android:background="@drawable/add_record_background"
+                      android:paddingTop="8sp"
+                      android:paddingBottom="8sp"
+                      android:paddingLeft="15sp"
+                      android:paddingRight="15sp"
+                      android:layout_marginBottom="15sp"
                       android:minWidth="200dip"/>
         </LinearLayout>
     </LinearLayout>

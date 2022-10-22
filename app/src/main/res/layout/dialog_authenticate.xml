@@ -8,6 +8,7 @@
                   android:orientation="vertical"
                   android:layout_marginTop="20sp"
                   android:layout_marginBottom="20sp"
+                  android:background="@drawable/item_pswd_background"
                   app:layout_constraintBottom_toBottomOf="parent"
                   app:layout_constraintLeft_toLeftOf="parent"
                   app:layout_constraintRight_toRightOf="parent"
@@ -20,9 +21,13 @@
                 android:id="@+id/pin_number">
             <TextView android:layout_height="wrap_content"
                       android:layout_width="wrap_content"
-                      android:textColor="#000"
+                      android:textColor="#718369"
+                      style="bold"
+                      android:textSize="14sp"
                       android:layout_gravity="center"
                       android:id="@+id/tvPinNumber"
+                      android:layout_marginTop="20sp"
+                      android:layout_marginBottom="20sp"
                       android:text="Enter Your PIN Number" />
 
             <EditText android:layout_height="wrap_content"
@@ -36,6 +41,12 @@
                       android:hint="PIN"
                       android:inputType="number"
                       android:maxLength="6"
+                      android:background="@drawable/add_record_background"
+                      android:paddingTop="8sp"
+                      android:paddingBottom="8sp"
+                      android:paddingLeft="15sp"
+                      android:paddingRight="15sp"
+                      android:layout_marginBottom="15sp"
                       android:minWidth="200dip"/>
         </LinearLayout>
     </LinearLayout>
